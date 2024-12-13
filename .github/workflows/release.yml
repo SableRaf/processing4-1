@@ -96,6 +96,8 @@ jobs:
       - name: Write to todo.txt
         run: |
           echo "${{ needs.version.outputs.build_number }} (${{ needs.version.outputs.version }})" > todo.txt
+          sed -i "s/static private final int REVISION = [0-9]\+;/static private final int REVISION = ${{ needs.version.outputs.build_number }};/" app/src/processing/app/Base.java
+          cat app/src/processing/app/Base.java
       - name: Install Certificates for Code Signing
         if: ${{ matrix.os_prefix == 'macos' }}
         uses: apple-actions/import-codesign-certs@v3
