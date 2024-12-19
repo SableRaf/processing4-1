@@ -109,3 +109,4 @@ java/build/
 /java/preprocessor/build
 /java/lsp/build
 /.kotlin/sessions
+/p5js/build

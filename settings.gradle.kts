@@ -17,3 +17,4 @@ buildscript {
         mavenCentral()
     }
 }
+include("p5js")
