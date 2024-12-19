@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.0.20"
+    kotlin("plugin.serialization") version "1.9.0"
 }
 
 group = "org.processing"
@@ -13,6 +14,9 @@ repositories {
 
 dependencies {
     compileOnly(project(":app"))
+    implementation(libs.ktxCoroutines)
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+
 
     testImplementation(kotlin("test"))
 }

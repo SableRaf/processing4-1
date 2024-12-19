@@ -21,6 +21,7 @@ netbeansSwing = { module = "org.netbeans.api:org-netbeans-swing-outline", versio
 ant = { module = "org.apache.ant:ant", version = "1.10.14" }
 lsp4j = { module = "org.eclipse.lsp4j:org.eclipse.lsp4j", version = "0.22.0" }
 jsoup = { module = "org.jsoup:jsoup", version = "1.17.2" }
+ktxCoroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version = "1.7.3" }
 
 [plugins]
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
